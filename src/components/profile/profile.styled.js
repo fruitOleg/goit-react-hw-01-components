@@ -49,12 +49,7 @@ export const StatsList = styled.ul`
   width: 100%;
 `;
 export const ListItem = styled.li`
-  border: 1px solid gray;
-  border-bottom: none;
-  padding: 20px;
-  width: 100%;
   background-color: lightgrey;
-
   align-items: center;
   background-color: #ebedf0;
   border: 1px solid #a0abb6;
@@ -67,6 +62,7 @@ export const ListItem = styled.li`
 export const TextContent = styled.h4`
   margin: 0;
   margin-bottom: 10px;
+  color: #7a8999;
 `;
 export const StatsContent = styled.h3`
   margin: 0;

@@ -1,16 +1,19 @@
 import { Background } from './stats.styled';
+import { Title } from './stats.styled';
+import { StatsList } from './stats.styled';
+import { ListItem } from './stats.styled';
 export const Stats = ({ items }) => {
   return (
     <Background>
-      <h1>Upload stats</h1>
-      <ul>
+      <Title>Upload stats</Title>
+      <StatsList>
         {items.map(item => (
-          <li>
+          <ListItem>
             <p>{item.label}</p>
             <p>{item.percentage}%</p>
-          </li>
+          </ListItem>
         ))}
-      </ul>
+      </StatsList>
     </Background>
   );
 };
