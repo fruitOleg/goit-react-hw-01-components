@@ -5,8 +5,7 @@ export const Background = styled.div`
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
+
   overflow: hidden;
 `;
 export const Avatar = styled.img`
@@ -16,7 +15,7 @@ export const Avatar = styled.img`
 export const FriendsList = styled.ul`
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 150px;
   align-items: center;
   width: 100%;
   gap: 20px;
@@ -32,18 +31,8 @@ export const ListItem = styled.li`
   padding: 20px;
   width: 300px;
 `;
-const getSpanColor = props => {
-  switch (props.status) {
-    case 'false':
-      return '#ff5150';
-    case 'true':
-      return '#50ae4f';
-    default:
-      return 'black';
-  }
-};
 export const IsOnline = styled.span`
-  background-color: ${getSpanColor};
+  background-color: ${props => (props.children ? 'green' : 'red')};
   border-radius: 50%;
   display: block;
   height: 25px;

@@ -9,7 +9,6 @@ export const Background = styled.div`
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
   margin-bottom: 150px;
   border: 1px solid gray;
   box-shadow: 3px 3px 8px #7a8999;

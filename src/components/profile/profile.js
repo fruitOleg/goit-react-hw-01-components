@@ -1,13 +1,16 @@
-import { Avatar } from './profile.styled';
-import { Background } from './profile.styled';
-import { Nickname } from './profile.styled';
-import { Tag } from './profile.styled';
-import { Location } from './profile.styled';
-import { StatsList } from './profile.styled';
-import { ListItem } from './profile.styled';
-import { TextContent } from './profile.styled';
-import { StatsContent } from './profile.styled';
-import { ProfileDescription } from './profile.styled';
+import {
+  Avatar,
+  ProfileDescription,
+  StatsContent,
+  TextContent,
+  ListItem,
+  StatsList,
+  Location,
+  Tag,
+  Nickname,
+  Background,
+} from './profile.styled';
+
 export const Profile = ({ data }) => {
   return (
     <Background>

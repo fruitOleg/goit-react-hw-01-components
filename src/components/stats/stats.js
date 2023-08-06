@@ -1,7 +1,5 @@
-import { Background } from './stats.styled';
-import { Title } from './stats.styled';
-import { StatsList } from './stats.styled';
-import { ListItem } from './stats.styled';
+import { Background, ListItem, StatsList, Title } from './stats.styled';
+
 export const Stats = ({ items }) => {
   return (
     <Background>
