@@ -49,7 +49,6 @@ export const StatsList = styled.ul`
   width: 100%;
 `;
 export const ListItem = styled.li`
-  background-color: lightgrey;
   align-items: center;
   background-color: #ebedf0;
   border: 1px solid #a0abb6;
