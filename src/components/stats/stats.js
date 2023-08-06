@@ -1,25 +1,16 @@
-const Stats = () => {
+import { Background } from './stats.styled';
+export const Stats = ({ items }) => {
   return (
-    <div>
+    <Background>
       <h1>Upload stats</h1>
       <ul>
-        <li>
-          <span>.docx</span>
-          <span></span>
-        </li>
-        <li>
-          <span>.pdf</span>
-          <span></span>
-        </li>
-        <li>
-          <span>.mp3</span>
-          <span></span>
-        </li>
-        <li>
-          <span>.psd</span>
-          <span></span>
-        </li>
+        {items.map(item => (
+          <li>
+            <p>{item.label}</p>
+            <p>{item.percentage}%</p>
+          </li>
+        ))}
       </ul>
-    </div>
+    </Background>
   );
 };

@@ -10,6 +10,7 @@ export const Background = styled.div`
   border: 1px solid gray;
   box-shadow: 3px 3px 8px #7a8999;
   border-radius: 8px;
+  overflow: hidden;
 `;
 export const ProfileDescription = styled.div`
   align-items: center;
