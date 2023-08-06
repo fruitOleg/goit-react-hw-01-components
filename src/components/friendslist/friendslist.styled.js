@@ -27,9 +27,8 @@ export const ListItem = styled.li`
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-
   padding: 20px;
-  width: 300px;
+  width: 400px;
 `;
 export const IsOnline = styled.span`
   background-color: ${props => (props.children ? 'green' : 'red')};
@@ -40,5 +39,5 @@ export const IsOnline = styled.span`
   width: 25px;
 `;
 export const Name = styled.h2`
-  margin-left: 50px;
+  margin-left: 100px;
 `;
