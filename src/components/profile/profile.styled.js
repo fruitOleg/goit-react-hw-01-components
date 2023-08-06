@@ -1,22 +1,23 @@
 import styled from 'styled-components';
 export const Background = styled.div`
   background-color: #fff;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
   margin-bottom: 150px;
-  padding: 30px;
   border: 1px solid gray;
-  display: flex;
+  box-shadow: 3px 3px 8px #7a8999;
+  border-radius: 8px;
+`;
+export const ProfileDescription = styled.div`
   align-items: center;
+  display: flex;
   flex-direction: column;
-  /* border-radius: 17px; */
 `;
 export const Avatar = styled.img`
-  width: 170px;
-  height: 170px;
+  width: 180px;
   border-radius: 50%;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -43,24 +44,29 @@ export const Location = styled.p`
 `;
 export const StatsList = styled.ul`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
 `;
 export const ListItem = styled.li`
   border: 1px solid gray;
   border-bottom: none;
   padding: 20px;
-  width: 100px;
-  height: 97px;
+  width: 100%;
   background-color: lightgrey;
+
+  align-items: center;
+  background-color: #ebedf0;
+  border: 1px solid #a0abb6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 35%;
 `;
-export const TextContent = styled.p`
-  font-size: 15px;
+export const TextContent = styled.h4`
   margin: 0;
   margin-bottom: 10px;
 `;
-export const StatsContent = styled.p`
+export const StatsContent = styled.h3`
   margin: 0;
-  font-weight: 600;
 `;

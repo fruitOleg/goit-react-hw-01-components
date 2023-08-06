@@ -7,13 +7,16 @@ import { StatsList } from './profile.styled';
 import { ListItem } from './profile.styled';
 import { TextContent } from './profile.styled';
 import { StatsContent } from './profile.styled';
+import { ProfileDescription } from './profile.styled';
 export const Profile = ({ data }) => {
   return (
     <Background>
-      <Avatar src={data.avatar} alt="User avatar" />
-      <Nickname>{data.username}</Nickname>
-      <Tag>@{data.tag}</Tag>
-      <Location>{data.location}</Location>
+      <ProfileDescription>
+        <Avatar src={data.avatar} alt="User avatar" />
+        <Nickname>{data.username}</Nickname>
+        <Tag>@{data.tag}</Tag>
+        <Location>{data.location}</Location>
+      </ProfileDescription>
       <StatsList>
         <ListItem>
           <TextContent>Followers</TextContent>
