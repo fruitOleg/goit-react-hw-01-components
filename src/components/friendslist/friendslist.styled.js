@@ -30,8 +30,8 @@ export const ListItem = styled.li`
   padding: 20px;
   width: 400px;
 `;
-export const IsOnline = styled.span`
-  background-color: ${props => (props.children ? 'green' : 'red')};
+export const Status = styled.span`
+  background-color: ${({ online }) => (online ? 'green' : 'red')};
   border-radius: 50%;
   display: block;
   height: 25px;

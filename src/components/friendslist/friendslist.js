@@ -1,7 +1,7 @@
 import {
   Background,
   Name,
-  IsOnline,
+  Status,
   ListItem,
   FriendsList,
   Avatar,
@@ -12,8 +12,8 @@ export const Friendslist = ({ friends }) => {
     <Background>
       <FriendsList>
         {friends.map(friend => (
-          <ListItem>
-            <IsOnline>{friend.isOnline}</IsOnline>
+          <ListItem key={friend.id}>
+            <Status online={friend.isOnline}></Status>
             <Avatar src={friend.avatar} alt="User avatar" />
             <Name>{friend.name}</Name>
           </ListItem>

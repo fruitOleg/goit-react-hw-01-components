@@ -12,6 +12,7 @@ export const App = () => {
     <div>
       <Profile data={userData} />
       <Stats items={statsData} />
+      <Stats title="Upload stats" items={statsData} />
       <Friendslist friends={friendsData} />
       <Transaction transactions={transactionData} />
       <GlobalStyle />

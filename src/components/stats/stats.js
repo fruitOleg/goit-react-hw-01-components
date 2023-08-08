@@ -1,12 +1,12 @@
 import { Background, ListItem, StatsList, Title } from './stats.styled';
 
-export const Stats = ({ items }) => {
+export const Stats = ({ items, title }) => {
   return (
     <Background>
-      <Title>Upload stats</Title>
+      {title && <Title> {title} </Title>}
       <StatsList>
         {items.map(item => (
-          <ListItem>
+          <ListItem key={item.id}>
             <p>{item.label}</p>
             <p>{item.percentage}%</p>
           </ListItem>
